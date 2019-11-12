@@ -1,5 +1,12 @@
 <h1>
-  <%= @task.title %>
+  <div class="top-container">
+    <div class="header">
+      <%= @task.title %>
+    </div>
+    <div class="button">
+      <%= link_to 'Edit', edit_task_path, class: 'btn btn-primary button-width' %>
+    </div>
+  </div>
 </h1>
 <br>
 <div class="alert alert-success description">

@@ -30,3 +30,43 @@ li {
 ul {
   padding-left: 0;
 }
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.plus-sign {
+  color: #007bff;
+  padding-right: 5px;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  margin-right: 3rem;
+  margin-left: 15rem;
+}
+
+.button-width {
+  width: 100px;
+}
+
+.edit-footer {
+  display: flex;
+  align-items: center;
+}
+
+.edit-submit {
+  margin-right: 1rem;
+}
+
+.return-button {
+  margin: 0;
+}
