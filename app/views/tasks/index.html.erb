@@ -1,7 +1,12 @@
+<div class="home-container">
+<h1>Tasks</h1>
+<br>
 <% @tasks.each do |task| %>
 <ul>
   <li><%= check_box :task, :completed, {:checked => task.completed, :disabled => true} %>
-    <%= link_to task.title, task_path(task) %></li>
+    <%= link_to task.title, task_path(task) %>
+    <%= link_to '🗑', task_path(task), method: :delete %>
+    </li>
 </ul>
 <% end %>
 <br>
@@ -9,4 +14,5 @@
 <div class="border-bottom"></div>
 <div class="add-task">
   <i class="fa fa-plus plus-sign" aria-hidden="true"></i><%= link_to 'Add a new task' , new_task_path %>
+</div>
 </div>
