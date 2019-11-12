@@ -14,18 +14,18 @@
  *= require_self
  */
 
-body {
+/*body {
   margin: 20px;
-}
+}*/
 
 .description {
-  width: 90vw;
+  width: 50vw;
 }
 
-.home-container {
+/*.home-container {
   margin: 10px;
 }
-
+*/
 li {
   text-decoration: none;
   list-style: none;

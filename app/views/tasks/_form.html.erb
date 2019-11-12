@@ -7,10 +7,13 @@
   <%= f.label :details %>
   <%= f.text_field :details, class: 'form-control' %>
 </div>
+<!-- add completed checkbox to edit page only -->
+<% if @task.persisted? %>
 <div class="form-group">
   <%= f.check_box :completed %>
   <%= f.label :completed %>
 </div>
+<% end %>
 <div class="edit-footer">
   <div class="edit-submit">
     <%= f.submit %>
