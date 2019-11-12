@@ -11,5 +11,5 @@ require 'faker'
 Task.destroy_all
 
 10.times do
-  Task.create(title: Faker::Book.title, details: 'read this book')
+  Task.create(title: Faker::Book.title, details: Faker::Hipster.sentence)
 end
